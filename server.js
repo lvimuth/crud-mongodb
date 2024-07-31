@@ -1,5 +1,3 @@
-// mongodb+srv://sachinranawaka8:VCrgQSXBDI2QvztY@cluster0.vb6jdfq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -22,7 +20,7 @@ app.use(cors());
 
 mongoose
   .connect(
-    "mongodb+srv://sachinranawaka8:VCrgQSXBDI2QvztY@cluster0.vb6jdfq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    "mongodb+srv://username:password@cluster0.vb6jdfq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => console.log("MongoDB connected"))
