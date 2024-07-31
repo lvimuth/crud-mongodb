@@ -67,8 +67,7 @@ const ItemList = () => {
       <ul>
         {items.map((item) => (
           <li key={item._id}>
-            {item.name} - {item.quantity} (Created at:{" "}
-            {new Date(item.createdAt).toLocaleString()})
+            {item.name} - {item.quantity}
             <button onClick={() => handleEdit(item)}>Edit</button>
             <button onClick={() => handleDelete(item._id)}>Delete</button>
           </li>
